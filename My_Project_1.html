@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="My_Project_1.css">
+    <script src="https://kit.fontawesome.com/897ea4c44d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="LOGO.jpg" alt="Logo" width="120px" height="120px">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header_text">
+                <p>Software Engineer</p>
+                <h1>Hi ; I'm <span>Dulari Wathsala</span> <br>from Sri Lanka</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--About-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="P2.jpg" alt="p2">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I am a passionate and dedicated Software Engineer with a strong background in designing, developing, and implementing innovative software solutions. With a focus on problem-solving and efficiency, I specialize in full-stack development, working with a variety of programming languages and frameworks to create scalable and robust applications. My experience spans across front-end and back-end development, database management, and cloud technologies. I thrive in collaborative environments, continuously learning new technologies to stay on the cutting edge of the industry. I am committed to delivering high-quality software that meets both user needs and business goals, with a keen eye for detail and a passion for clean, maintainable code.
+                    </p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                    </div>
+
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Developer</span><br>Web App Development</li>
+                            <li><span>App Developer</span><br>Building Android/iOS Apps</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>Training at Zorrosign software company</li>
+                            <li><span>2019 - 2021</span><br>UI/UX Design Executive at COIN Digital Ltd.</li>
+                            <li><span>2017 - 2019</span><br>Internship at Virtusa</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>2016</span><br>BSc (Hons) Software Engineering from Sabatagamuwa University of Sri Lanka</li>
+                            <li><span>2017</span><br>Design Training at ET Institute</li>
+                            <li><span>2015</span><br>MSc in Information Technology from University of Colombo (UCSC)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Service-->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-webflow"></i>
+                    <h2>Web Design</h2>
+                    <p>I create clean, responsive websites that provide an engaging and user-friendly experience, optimized for all devices and user needs.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-regular fa-object-group"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I design intuitive user interfaces and experiences that prioritize simplicity and functionality, ensuring users can interact with products effortlessly and enjoyably.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>I create sleek, responsive apps for both Android and iOS platforms, delivering seamless performance and engaging user experiences.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="1.jpg" alt="1">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>A user-friendly app for connecting and sharing with friends globally.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="2.jpg" alt="2">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Stream and enjoy your favorite songs and playlists anytime, anywhere.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="3.jpg" alt="3">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>A simple app for browsing, buying, and tracking products with secure payments.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!--Contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>dulariwathsala824@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>0710659360</p>
+                    <div class="social-icon">
+                        <a href="https://web.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://lk.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="cv1.pdf" class="btn btn2">Download CV</a>
+
+                </div>
+                <div class="contact-right">
+                    <form action="" name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Massage" rows="6" placeholder="Your Massage"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                        <button type="reset" class="btn btn2">Reset</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div> 
+        </div>
+        </div>
+    </div>
+ 
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-content");
+        
+        function opentab(event, tabname){
+            // Remove active-link class from all tab links
+            for (var tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            // Hide all tab contents
+            for (var tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+
+            // Add active-link class to clicked tab and show the corresponding tab content
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }    
+    </script> 
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwTfUtFSZlIlgauxS5UdtGQuRfLS_hl1ieakV0H2sAPRCponjF-qMDr5kIcZOHAtY_R/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+    
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Massage Send Succesfully."
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    
+</body>
+</html>
